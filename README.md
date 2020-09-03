@@ -1,7 +1,8 @@
 # WebFormsProject
 A college assignment where I had to build a Web Forms application that executes CRUD operations on user data stored in a database.
 
-The application was built using Microsoft Visual Studio 2019 The database was built using Microsoft SQL Server Management Studio 18.
+The application was built using Microsoft Visual Studio 2019.
+The database was built using Microsoft SQL Server Management Studio 18.
 
 The goal of the application was to use knowledge learnt from the Web Development course and implement it in a Web Forms application.
 The application allows for two types of users: administrator and user.
