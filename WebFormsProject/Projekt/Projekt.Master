@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Projekt.master.cs" Inherits="Projekt.Projekt" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Izgled.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container glavni">
+            <header>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 text-left">
+
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+
+                        <span class="title"><%=Naslov %></span>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 text-right" style="padding-top: 5px;">
+                        <asp:ContentPlaceHolder ID="headerRight" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 text-right" style="padding-top: 5px;">
+                </div>
+                <hr style="margin-top: 5px;" />
+                <nav>
+                    <ul>
+                        <li class="btn btn-default">
+                            <span class="glyphicon glyphicon-floppy-save"></span>
+                            <asp:LinkButton
+                                ID="lbDodavanje"
+                                runat="server"
+                                PostBackUrl="~/DodavanjeOsoba.aspx"
+                                Text="Dodavanje osoba" CausesValidation="False" meta:resourcekey="lbDodavanjeResource1"></asp:LinkButton>
+                        </li>
+                        <li class="btn btn-default">
+                            <span class="glyphicon glyphicon-share"></span>
+                            <asp:LinkButton
+                                ID="lbAzuriranje"
+                                runat="server"
+                                PostBackUrl="~/AzuriranjeOsoba.aspx"
+                                Text="Ažuriranje osoba" CausesValidation="False" meta:resourcekey="lbAzuriranjeResource1"></asp:LinkButton>
+                        </li>
+                        <li class="btn btn-default">
+                            <span class="glyphicon glyphicon-list"></span>
+                            <asp:LinkButton
+                                ID="lbPrikaz"
+                                runat="server"
+                                PostBackUrl="~/PrikazOsoba.aspx"
+                                Text="Prikaz osoba" CausesValidation="False" meta:resourcekey="lbPrikazResource1"></asp:LinkButton>
+                        </li>
+                        <li class="btn btn-default">
+                            <span class="glyphicon glyphicon-cog"></span>
+                            <asp:LinkButton
+                                ID="lbPostavke"
+                                runat="server"
+                                PostBackUrl="~/Postavke.aspx"
+                                Text="Postavke" CausesValidation="False" meta:resourcekey="lbPostavkeResource1"></asp:LinkButton>
+                        </li>
+                    </ul>
+                </nav>
+                <hr />
+            </header>
+            <section class="mainSection">
+                <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <hr />
+            <footer>
+                <span class="title" style="color: red; font-weight: bold;"><%=ErrorMessage %></span>
+                <p>
+                    <%:string.Format("{0:D}", DateTime.Now.ToLocalTime()) %> |
+                    <span>RWA -<span style="color: red;"> WebForms</span> - Project</span>
+                </p>
+                <p class="badge repoInfo">
+                    <span id="lblRepoInfo">Repository - DataBase</span>
+                </p>
+
+            </footer>
+        </div>
+    </form>
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="Scripts/bootbox.js"></script>
+
+</body>
+</html>

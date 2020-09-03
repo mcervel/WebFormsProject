@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap enableLocalization="true" xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="404" resourceKey="404" title=""  description="">
+    <siteMapNode url="AzuriranjeOsoba" resourceKey="azuriranjeosobe" title=""  description="" />
+    <siteMapNode url="DodavanjeOsoba" resourceKey="dodavanjeosobe" title=""  description="" />
+    <siteMapNode url="Error" resourceKey="error" title=""  description="" />
+    <siteMapNode url="Login" resourceKey="login" title=""  description="" />
+    <siteMapNode url="Postavke" resourceKey="postavke" title=""  description="" />
+    <siteMapNode url="PrikazOsoba" resourceKey="prikazosoba" title=""  description="" />
+    <siteMapNode url="UrediOsobu" resourceKey="urediosobu" title=""  description="" />
+  </siteMapNode>
+</siteMap>

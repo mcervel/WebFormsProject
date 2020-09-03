@@ -1,0 +1,148 @@
+﻿body {
+    font-family: 'Segoe UI';
+    background-color: #efefef;
+}
+
+.glavni {
+    background-color: white;
+    padding: 10px;
+    margin: 30px auto 0;
+    min-height: 500px;
+    border: 0px solid #ccc;
+    overflow: hidden;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+nav {
+    text-align: center;
+}
+
+    nav ul {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 5px 20px;
+            width: 150px;
+            text-decoration: none;
+        }
+            nav ul li a{
+                color:black;
+            }
+            nav ul li a:hover {
+                text-decoration: none;
+                height: 50px;
+            }
+
+            footer {
+                text-align: center;
+            }
+
+.title {
+    color: #000;
+    display: block;
+    font-size: 2em;
+    font-weight: 100;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 10px;
+}
+
+h1 {
+    font-weight: 100;
+    text-align: center;
+}
+
+.validationSummary {
+    text-align: left;
+    color: red;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+.repoInfo {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+td {
+    padding: 5px;
+}
+
+    td:first-child {
+        font-weight: bold;
+    }
+
+.osoba {
+    border: 1px solid #dedede;
+    width: 310px;
+    padding: 10px;
+    float: left;
+    margin: 10px;
+}
+
+.btnCtrl {
+    width: 85px;
+}
+
+
+.tblRepeater {
+    margin: auto;
+    width: 100%;
+}
+
+    .tblRepeater td:last-of-type {
+        vertical-align: top;
+    }
+
+    .tblRepeater tr:not(:first-child) {
+        height: 80px;
+    }
+
+    .tblRepeater tr:not(:first-of-type) td:first-child {
+        font-weight: normal;
+    }
+
+    .tblRepeater ul {
+        padding: 0;
+    }
+
+        .tblRepeater ul li {
+            list-style: none;
+        }
+
+
+.tblGrid {
+    margin: auto;
+    width: 100%;
+}
+
+    .tblGrid td:last-of-type {
+        vertical-align: top;
+    }
+
+    .tblGrid tr:not(:first-child) {
+        height: 40px;
+    }
+
+    .tblGrid tr:not(:first-of-type) td:first-child {
+        font-weight: normal;
+    }
+
+    .tblGrid ul {
+        padding: 0;
+    }
+
+        .tblGrid ul li {
+            list-style: none;
+        }
+/*.aspNetDisabled{
+    width:120px;
+}*/
